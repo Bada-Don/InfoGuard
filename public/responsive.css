@@ -1,0 +1,44 @@
+@media only screen and (max-width: 1300px) {
+    caption {
+        font-size: 3rem;
+    }
+
+    th,
+    td {
+        background-color: black;
+        border: 4px solid rgb(255, 255, 255);
+        font-size: 1.2rem;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .top2{
+        margin-top: 1rem;
+    }
+    .top4{
+        margin-top: 2rem;
+    }
+    .form-container{
+        margin-top: 2.5rem;
+    }
+    form {
+        width: 30rem;
+        padding: 1.2rem;
+    }
+
+    form input {
+        font-size: 1.2rem;
+    }
+    #hero{
+        margin-top: 3.5rem;
+    }
+    #hero img{
+        height: 20rem;
+    }
+    #hero button{
+        font-size: 1.2rem;
+    }
+}

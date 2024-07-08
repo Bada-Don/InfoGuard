@@ -1,0 +1,42 @@
+nav {
+    background-color: #102a5b;
+    backdrop-filter: blur(4px);
+    box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, .5);
+    width: 95%;
+    border-radius: 0 0 1rem 1rem;
+    padding: 0 2rem 0 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logotext{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 1.5rem;
+    gap: 2rem;
+}
+ul a{
+text-decoration: none;
+color: aliceblue;
+}
+.logo {
+    height: 3.5rem;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}

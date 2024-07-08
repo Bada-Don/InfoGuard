@@ -1,0 +1,1 @@
+let password = document.getElementsByClassName

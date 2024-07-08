@@ -1,0 +1,18 @@
+#hero{
+    width: 100%;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#hero p{
+    font-size: 2rem;
+}
+#hero button{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: #ff6550;
+    border-radius: 0.5rem;
+}

@@ -1,0 +1,23 @@
+<%- include('head') %>
+<section class="form-description">
+    <h2 class="form-heading">You are about to edit the details for:</h2>
+    <h1><b><em>
+                <%= user.email %>
+            </em></b></h1>
+</section>
+
+<form method="POST" action="/users/<%= user.id %>?_method=PATCH">
+    <h1>Edit Details</h1>
+    <label for="newUsername">Enter new Username</label>
+    <input name="newUsername" id="newUsername" type="text" value="<%= user.username%>" placeholder="Enter New Username">
+
+    <label for="newPassword">Enter new Password</label>
+    <input name="newPassword" id="newPassword" type="password" placeholder="Enter New Password">
+
+    <label for="currPassword">Enter current Password</label>
+    <input name="currPassword" id="currPassword" type="password" placeholder="Enter current Username">
+    <br>
+    <button class="edit-btn submit" type="submit">Submit</button>
+</form>
+
+<%- include('footer') %>

@@ -1,0 +1,40 @@
+<%- include('head') %>
+    <form class="glass" action="/new">
+        <button type="submit"  class="submit new-acc">Create new account</button>
+    </form>
+    <table>
+        <caption>List of our users</caption>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Edit Details</th>
+            <th>Delete Account</th>
+        </tr>
+
+        <% for( let user of users) { %>
+            <tr>
+                <td>
+                    <%= user.id %>
+                </td>
+                <td>
+                    <%= user.username %>
+                </td>
+                <td>
+                    <%= user.email %>
+                </td>
+                <td>
+                    <button class="edit-btn"
+                        onclick="window.location.href=`http://localhost:8080/users/<%= user.id %>/edit`">Edit
+                        Now</button>
+                </td>
+                <td>
+                    <button class="edit-btn delete-btn"
+                        onclick="window.location.href=`http://localhost:8080/users/<%= user.id %>/delete`">Delete Account</button>
+                </td>
+            </tr>
+
+            <% } %>
+    </table>
+
+    <%- include('footer') %>

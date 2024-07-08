@@ -1,0 +1,14 @@
+footer{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    display: flex;
+    gap: 0.1rem;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    margin-top: auto; /* Ensure it sticks to the bottom */
+}
+.main-content {
+    flex: 1;
+    /* Ensure other content takes up available space */
+}

@@ -1,0 +1,24 @@
+<%- include('head') %>
+    <h1 class="top4">Welcome to InfoGuard:</h1>
+    <div class="form-container">
+        <img src="\cyber-security-illustration-concept-with-characters-data-security-protected-access-control-privacy-data-protection_269730-48.png" alt="">
+        <form id="new-form" action="/new" method="POST">
+
+            <h2 class="form-heading">Create new account</h2>
+
+            <input id="new-username" type="text" name="username" placeholder="Username" required>
+            <input id="new-email" type="email" name="email" placeholder="Email" required>
+
+            <p id="emailError" class="red hide">Email already exists</p>
+
+            <input id="new-password" type="password" name="password" placeholder="Password" required>
+            <input id="new-reEnterPassword" type="password" name="reEnterPassword" placeholder="Re-enter Password" required>
+
+            <p id="passwordError" class="red hide">Passwords don't match</p>
+
+            <button type="submit" class="submit">Submit</button>
+
+            <a href="/users">Existing User?</a>
+        </form>
+    </div>
+    <%- include('footer') %>

@@ -1,0 +1,14 @@
+<%-include('head')%>
+<br>
+<br>
+<h2>Do you really want to delete this account  @<%= user.username %>?</h2>
+<h2>ID = <%= user.id %>?</h2>
+<br>
+    <form action="/users/<%= user.id%>?_method=DELETE" method="post">
+        <label for="password">Enter the password to delete account.</label>
+        <input id="password" name="password" type="password" placeholder="Enter Password" required>
+        <button class="edit-btn delete-btn" type="submit">Delete</button>
+    </form>
+    
+
+<%-include('footer')%>

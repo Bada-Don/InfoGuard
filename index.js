@@ -23,7 +23,11 @@ app.use(session({
     saveUninitialized: true
 }));
 app.use(flash());
-
+app.use((req, res, next) => {
+    res.locals.success = req.flash('success');
+    res.locals.error = req.flash('error');
+    next();
+});
 // Connection
 const connection = mysql.createConnection({
     host: '127.0.0.1',
@@ -76,6 +80,7 @@ app.get('/users/:id/edit', (req, res) => {
             res.redirect('/users');
         } else {
             res.render('Edit User', { user: result[0] });
+            console.log(result[0]);
         }
     });
 });
